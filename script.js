@@ -12,6 +12,8 @@ javascript:(
         slider.value = 50;
 
         textBox.textContent = element;
+        textBox.style.margin = "10px";
+        textBox.style.boxShadow = "3px 3px 7px rgba(0, 0, 0, 0.6)";
         
         slider.style.position = "fixed";
         sliderBox.style.position = "fixed";
@@ -27,12 +29,14 @@ javascript:(
         slider.style.transformOrigin = "top right";
         
         slider.style.width = "250px";
-        sliderBox.style.height = "250px";
+        sliderBox.style.height = "250px";                                                                 
         sliderBox.style.width = "15px";
         sliderBox.style.border = "3px solid white";
         sliderBox.style.borderRadius = "5px";
         sliderBox.style.backgroundColor = "white";
         sliderBox.style.boxShadow = "3px 3px 7px rgba(0, 0, 0, 0.6)";
+
+        sliderBox.style.alignItems = "center";
 
         sliderBox.appendChild(slider);
         sliderBox.appendChild(textBox);
