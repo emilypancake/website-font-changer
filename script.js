@@ -12,7 +12,7 @@ javascript:(
         slider.value = 50;
 
         textBox.textContent = element;
-        textBox.style.margin = "10px";
+        textBox.style.marginTop = "5px";
         textBox.style.boxShadow = "3px 3px 7px rgba(0, 0, 0, 0.6)";
         
         slider.style.position = "fixed";
@@ -37,6 +37,7 @@ javascript:(
         sliderBox.style.boxShadow = "3px 3px 7px rgba(0, 0, 0, 0.6)";
 
         sliderBox.style.alignItems = "center";
+        sliderBox.style.justifyItems = "center";
 
         sliderBox.appendChild(slider);
         sliderBox.appendChild(textBox);
@@ -66,7 +67,7 @@ javascript:(
 
         textBox.addEventListener("click", function(){
             element = prompt("What element name? Don't make mistakes, otherwise an error will occur!");
-            if(element != null){
+            if(element != null || element != ""){
                 textBox.textContent = element;
             }
             updateList();
